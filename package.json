@@ -17,8 +17,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "cra-start": "react-scripts start",
+    "cra-build": "react-scripts build",
+    "start": "webpack serve",
+    "build": "webpack build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv-webpack": "^8.0.1",
+    "ts-loader": "^9.5.1",
+    "webpack-cli": "^5.1.4"
   }
 }
